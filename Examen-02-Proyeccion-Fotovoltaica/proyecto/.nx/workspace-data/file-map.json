@@ -1,0 +1,782 @@
+{
+  "version": "6.0",
+  "nxVersion": "23.1.0",
+  "pathMappings": {},
+  "nxJsonPlugins": [
+    {
+      "name": "@nx/js/typescript",
+      "options": {
+        "typecheck": {
+          "targetName": "typecheck"
+        },
+        "build": {
+          "targetName": "build",
+          "configName": "tsconfig.lib.json",
+          "buildDepsName": "build-deps",
+          "watchDepsName": "watch-deps"
+        }
+      }
+    },
+    {
+      "name": "@nx/webpack/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "serveTargetName": "serve",
+        "previewTargetName": "preview",
+        "buildDepsTargetName": "build-deps",
+        "watchDepsTargetName": "watch-deps",
+        "serveStaticTargetName": "serve-static"
+      }
+    },
+    {
+      "name": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "lint"
+      }
+    },
+    {
+      "name": "@nx/jest/plugin",
+      "options": {
+        "targetName": "test"
+      }
+    },
+    {
+      "name": "@nx/vite/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "serveTargetName": "serve",
+        "devTargetName": "dev",
+        "previewTargetName": "preview",
+        "serveStaticTargetName": "serve-static",
+        "typecheckTargetName": "typecheck",
+        "buildDepsTargetName": "build-deps",
+        "watchDepsTargetName": "watch-deps"
+      }
+    },
+    {
+      "name": "@nx/vitest",
+      "version": "23.1.0",
+      "options": {
+        "testTargetName": "test",
+        "ciTargetName": "test-ci",
+        "testMode": "watch"
+      }
+    },
+    {
+      "name": "@nx/playwright/plugin",
+      "options": {
+        "targetName": "e2e"
+      }
+    }
+  ],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".github/skills/monitor-ci/SKILL.md",
+        "hash": "8399173415832764241"
+      },
+      {
+        "file": ".cursor/skills/nx-workspace/SKILL.md",
+        "hash": "14445122489349943565"
+      },
+      {
+        "file": ".github/skills/nx-import/SKILL.md",
+        "hash": "9709061508228126022"
+      },
+      {
+        "file": ".agents/skills/nx-import/references/NEXT.md",
+        "hash": "8705422121624482541"
+      },
+      {
+        "file": ".opencode/skills/monitor-ci/references/fix-flows.md",
+        "hash": "14499115380699629375"
+      },
+      {
+        "file": ".claude/settings.json",
+        "hash": "8149073484594127246"
+      },
+      {
+        "file": ".opencode/skills/nx-workspace/references/AFFECTED.md",
+        "hash": "10577828056523124002"
+      },
+      {
+        "file": ".codex/agents/ci-monitor-subagent.toml",
+        "hash": "4478062226442413400"
+      },
+      {
+        "file": ".github/skills/monitor-ci/scripts/ci-poll-decide.mjs",
+        "hash": "5080978990847760627"
+      },
+      {
+        "file": ".agents/skills/nx-workspace/references/AFFECTED.md",
+        "hash": "10577828056523124002"
+      },
+      {
+        "file": ".agents/skills/nx-workspace/SKILL.md",
+        "hash": "56694506768298655"
+      },
+      {
+        "file": ".agents/skills/monitor-ci/SKILL.md",
+        "hash": "8399173415832764241"
+      },
+      {
+        "file": ".opencode/skills/monitor-ci/SKILL.md",
+        "hash": "8399173415832764241"
+      },
+      {
+        "file": ".opencode/skills/nx-generate/SKILL.md",
+        "hash": "12149253535688076771"
+      },
+      {
+        "file": ".github/skills/nx-import/references/JEST.md",
+        "hash": "8022966628634571060"
+      },
+      {
+        "file": ".cursor/skills/link-workspace-packages/SKILL.md",
+        "hash": "6638592300654417978"
+      },
+      {
+        "file": "eslint.config.mjs",
+        "hash": "9064410588116746841"
+      },
+      {
+        "file": ".github/skills/nx-workspace/SKILL.md",
+        "hash": "56694506768298655"
+      },
+      {
+        "file": ".agents/skills/link-workspace-packages/SKILL.md",
+        "hash": "6638592300654417978"
+      },
+      {
+        "file": ".opencode/skills/monitor-ci/scripts/ci-state-update.mjs",
+        "hash": "13401974159889364904"
+      },
+      {
+        "file": ".opencode/skills/nx-import/references/TURBOREPO.md",
+        "hash": "6654032474246573297"
+      },
+      {
+        "file": ".opencode/skills/nx-import/references/NEXT.md",
+        "hash": "8705422121624482541"
+      },
+      {
+        "file": ".agents/skills/nx-import/references/ESLINT.md",
+        "hash": "3100736771536685484"
+      },
+      {
+        "file": ".cursor/skills/nx-plugins/SKILL.md",
+        "hash": "4717624081372438208"
+      },
+      {
+        "file": ".cursor/agents/ci-monitor-subagent.md",
+        "hash": "14869577228457002810"
+      },
+      {
+        "file": ".agents/skills/nx-import/references/VITE.md",
+        "hash": "5793928500507593678"
+      },
+      {
+        "file": ".github/skills/nx-workspace/references/AFFECTED.md",
+        "hash": "10577828056523124002"
+      },
+      {
+        "file": ".opencode/agents/ci-monitor-subagent.md",
+        "hash": "6611362967399008889"
+      },
+      {
+        "file": ".github/skills/nx-import/references/VITE.md",
+        "hash": "5793928500507593678"
+      },
+      {
+        "file": ".gemini/commands/monitor-ci.toml",
+        "hash": "14184780502634171331"
+      },
+      {
+        "file": ".github/skills/nx-plugins/SKILL.md",
+        "hash": "4717624081372438208"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "108759356477840841"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "8178980576928756596"
+      },
+      {
+        "file": "package.json",
+        "hash": "7231357486008361938"
+      },
+      {
+        "file": "vitest.workspace.ts",
+        "hash": "4665328684042819579"
+      },
+      {
+        "file": "AGENTS.md",
+        "hash": "18234343250335250711"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": ".opencode/skills/nx-import/references/VITE.md",
+        "hash": "5793928500507593678"
+      },
+      {
+        "file": ".github/skills/nx-import/references/NEXT.md",
+        "hash": "8705422121624482541"
+      },
+      {
+        "file": ".agents/skills/nx-run-tasks/SKILL.md",
+        "hash": "10723914446406921246"
+      },
+      {
+        "file": ".github/skills/nx-run-tasks/SKILL.md",
+        "hash": "10723914446406921246"
+      },
+      {
+        "file": ".codex/config.toml",
+        "hash": "7432973435562286270"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "6870352021923392442"
+      },
+      {
+        "file": ".github/agents/ci-monitor-subagent.agent.md",
+        "hash": "6573591679819005545"
+      },
+      {
+        "file": "tsconfig.json",
+        "hash": "12632107186024267096"
+      },
+      {
+        "file": ".opencode/skills/link-workspace-packages/SKILL.md",
+        "hash": "6638592300654417978"
+      },
+      {
+        "file": ".agents/skills/monitor-ci/scripts/ci-state-update.mjs",
+        "hash": "13401974159889364904"
+      },
+      {
+        "file": "opencode.json",
+        "hash": "8969569099983068167"
+      },
+      {
+        "file": ".github/skills/nx-generate/SKILL.md",
+        "hash": "12149253535688076771"
+      },
+      {
+        "file": ".cursor/skills/nx-generate/SKILL.md",
+        "hash": "16801959272346088877"
+      },
+      {
+        "file": ".github/skills/nx-import/references/GRADLE.md",
+        "hash": "15868511153961490698"
+      },
+      {
+        "file": ".github/skills/monitor-ci/scripts/ci-state-update.mjs",
+        "hash": "13401974159889364904"
+      },
+      {
+        "file": ".opencode/skills/nx-run-tasks/SKILL.md",
+        "hash": "10723914446406921246"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "17971230760093388244"
+      },
+      {
+        "file": "packages/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "README.md",
+        "hash": "12978235273465552390"
+      },
+      {
+        "file": ".opencode/skills/monitor-ci/scripts/ci-poll-decide.mjs",
+        "hash": "5080978990847760627"
+      },
+      {
+        "file": ".agents/skills/nx-import/references/TURBOREPO.md",
+        "hash": "6654032474246573297"
+      },
+      {
+        "file": ".opencode/commands/monitor-ci.md",
+        "hash": "12455117996087874585"
+      },
+      {
+        "file": ".agents/skills/nx-import/SKILL.md",
+        "hash": "9709061508228126022"
+      },
+      {
+        "file": ".opencode/skills/nx-import/references/ESLINT.md",
+        "hash": "3100736771536685484"
+      },
+      {
+        "file": ".cursor/commands/monitor-ci.md",
+        "hash": "9694566310897122482"
+      },
+      {
+        "file": ".github/skills/link-workspace-packages/SKILL.md",
+        "hash": "6638592300654417978"
+      },
+      {
+        "file": ".github/skills/monitor-ci/references/fix-flows.md",
+        "hash": "14499115380699629375"
+      },
+      {
+        "file": ".vscode/launch.json",
+        "hash": "17644507193625820623"
+      },
+      {
+        "file": ".agents/skills/nx-generate/SKILL.md",
+        "hash": "12149253535688076771"
+      },
+      {
+        "file": ".agents/skills/nx-import/references/GRADLE.md",
+        "hash": "15868511153961490698"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "11404062139812764783"
+      },
+      {
+        "file": ".opencode/skills/nx-import/SKILL.md",
+        "hash": "9709061508228126022"
+      },
+      {
+        "file": ".opencode/skills/nx-plugins/SKILL.md",
+        "hash": "4717624081372438208"
+      },
+      {
+        "file": ".agents/skills/monitor-ci/references/fix-flows.md",
+        "hash": "14499115380699629375"
+      },
+      {
+        "file": ".agents/skills/nx-plugins/SKILL.md",
+        "hash": "4717624081372438208"
+      },
+      {
+        "file": ".cursor/skills/nx-workspace/references/AFFECTED.md",
+        "hash": "10577828056523124002"
+      },
+      {
+        "file": ".opencode/skills/nx-import/references/JEST.md",
+        "hash": "8022966628634571060"
+      },
+      {
+        "file": ".agents/skills/monitor-ci/scripts/ci-poll-decide.mjs",
+        "hash": "5080978990847760627"
+      },
+      {
+        "file": "nx.json",
+        "hash": "2569816612959372303"
+      },
+      {
+        "file": ".cursor/skills/nx-run-tasks/SKILL.md",
+        "hash": "10723914446406921246"
+      },
+      {
+        "file": ".github/workflows/ci.yml",
+        "hash": "4618110639855784820"
+      },
+      {
+        "file": ".github/skills/nx-import/references/TURBOREPO.md",
+        "hash": "6654032474246573297"
+      },
+      {
+        "file": ".opencode/skills/nx-workspace/SKILL.md",
+        "hash": "56694506768298655"
+      },
+      {
+        "file": ".github/prompts/monitor-ci.prompt.md",
+        "hash": "373234804653081784"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "9430166341120122740"
+      },
+      {
+        "file": ".cursor/skills/monitor-ci/SKILL.md",
+        "hash": "2234589037131029925"
+      },
+      {
+        "file": ".gemini/settings.json",
+        "hash": "14337936512237811016"
+      },
+      {
+        "file": ".opencode/skills/nx-import/references/GRADLE.md",
+        "hash": "15868511153961490698"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "8678069272936106223"
+      },
+      {
+        "file": "CLAUDE.md",
+        "hash": "18234343250335250711"
+      },
+      {
+        "file": ".github/skills/nx-import/references/ESLINT.md",
+        "hash": "3100736771536685484"
+      },
+      {
+        "file": ".agents/skills/nx-import/references/JEST.md",
+        "hash": "8022966628634571060"
+      }
+    ],
+    "projectFileMap": {
+      "@org/client-e2e": [
+        {
+          "file": "apps/client-e2e/eslint.config.mjs",
+          "hash": "1172734138943286526",
+          "deps": [
+            "npm:eslint-plugin-playwright"
+          ]
+        },
+        {
+          "file": "apps/client-e2e/package.json",
+          "hash": "13173411692368013411"
+        },
+        {
+          "file": "apps/client-e2e/playwright.config.mts",
+          "hash": "11243371465303785445",
+          "deps": [
+            "npm:@playwright/test",
+            "npm:@nx/playwright",
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "apps/client-e2e/src/example.spec.ts",
+          "hash": "16019101014373124625",
+          "deps": [
+            "npm:@playwright/test"
+          ]
+        },
+        {
+          "file": "apps/client-e2e/tsconfig.json",
+          "hash": "2336895188465879021"
+        }
+      ],
+      "@examen-monorepo/shared": [
+        {
+          "file": "libs/shared/README.md",
+          "hash": "11453672666776903667"
+        },
+        {
+          "file": "libs/shared/eslint.config.mjs",
+          "hash": "7869296838249384130"
+        },
+        {
+          "file": "libs/shared/package.json",
+          "hash": "4554960159928068748"
+        },
+        {
+          "file": "libs/shared/src/index.ts",
+          "hash": "17043546311180003558"
+        },
+        {
+          "file": "libs/shared/src/lib/shared.spec.ts",
+          "hash": "2878050368395599403"
+        },
+        {
+          "file": "libs/shared/src/lib/shared.ts",
+          "hash": "10145405490205800499"
+        },
+        {
+          "file": "libs/shared/tsconfig.json",
+          "hash": "12834038490315927699"
+        },
+        {
+          "file": "libs/shared/tsconfig.lib.json",
+          "hash": "2438821551760750030"
+        },
+        {
+          "file": "libs/shared/tsconfig.spec.json",
+          "hash": "12757693314151657395"
+        },
+        {
+          "file": "libs/shared/vitest.config.mts",
+          "hash": "12073603746704053801",
+          "deps": [
+            "npm:vitest"
+          ]
+        }
+      ],
+      "@org/client": [
+        {
+          "file": "apps/client/eslint.config.mjs",
+          "hash": "951121186572877559",
+          "deps": [
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "apps/client/index.html",
+          "hash": "5228745034530488287"
+        },
+        {
+          "file": "apps/client/package.json",
+          "hash": "9189377744986134021",
+          "deps": [
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:@vitejs/plugin-react",
+            "npm:vite",
+            "npm:react",
+            "npm:react-dom"
+          ]
+        },
+        {
+          "file": "apps/client/public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "apps/client/src/app/app.module.css",
+          "hash": "6980201255928360025"
+        },
+        {
+          "file": "apps/client/src/app/app.spec.tsx",
+          "hash": "4411295774303174945",
+          "deps": [
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "apps/client/src/app/app.tsx",
+          "hash": "18235169484608425613",
+          "deps": [
+            "npm:react",
+            "@examen-monorepo/shared"
+          ]
+        },
+        {
+          "file": "apps/client/src/app/nx-welcome.tsx",
+          "hash": "2348102959109701629"
+        },
+        {
+          "file": "apps/client/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/client/src/main.tsx",
+          "hash": "11332670511827407186",
+          "deps": [
+            "npm:react",
+            "npm:react-dom"
+          ]
+        },
+        {
+          "file": "apps/client/src/styles.css",
+          "hash": "142817262591022698"
+        },
+        {
+          "file": "apps/client/tsconfig.app.json",
+          "hash": "14378807319833443451"
+        },
+        {
+          "file": "apps/client/tsconfig.json",
+          "hash": "9240132813632071828"
+        },
+        {
+          "file": "apps/client/tsconfig.spec.json",
+          "hash": "5535593306512760996"
+        },
+        {
+          "file": "apps/client/vite.config.mts",
+          "hash": "17665226977725271847",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react"
+          ]
+        }
+      ],
+      "@org/api-e2e": [
+        {
+          "file": "apps/api-e2e/.spec.swcrc",
+          "hash": "18201067170784284381"
+        },
+        {
+          "file": "apps/api-e2e/eslint.config.mjs",
+          "hash": "2624537849564014525"
+        },
+        {
+          "file": "apps/api-e2e/jest.config.cts",
+          "hash": "15811671035380721638"
+        },
+        {
+          "file": "apps/api-e2e/package.json",
+          "hash": "11243123539396861609"
+        },
+        {
+          "file": "apps/api-e2e/src/api/api.spec.ts",
+          "hash": "110394728024017389",
+          "deps": [
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "apps/api-e2e/src/support/global-setup.ts",
+          "hash": "10817858795115919263",
+          "deps": [
+            "npm:@nx/node"
+          ]
+        },
+        {
+          "file": "apps/api-e2e/src/support/global-teardown.ts",
+          "hash": "14210317125869451873",
+          "deps": [
+            "npm:@nx/node"
+          ]
+        },
+        {
+          "file": "apps/api-e2e/src/support/test-setup.ts",
+          "hash": "15521797170623961900",
+          "deps": [
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "apps/api-e2e/tsconfig.json",
+          "hash": "9504688482629570215"
+        }
+      ],
+      "@org/api": [
+        {
+          "file": "apps/api/.spec.swcrc",
+          "hash": "18201067170784284381"
+        },
+        {
+          "file": "apps/api/eslint.config.mjs",
+          "hash": "2624537849564014525"
+        },
+        {
+          "file": "apps/api/jest.config.cts",
+          "hash": "5547297030486150239"
+        },
+        {
+          "file": "apps/api/package.json",
+          "hash": "10024153440757932003",
+          "deps": [
+            "npm:@nestjs/testing",
+            "npm:@nestjs/common",
+            "npm:@nestjs/core",
+            "npm:@nestjs/platform-express",
+            "npm:@nestjs/swagger@7.4.2",
+            "npm:class-transformer",
+            "npm:class-validator",
+            "npm:reflect-metadata",
+            "npm:rxjs",
+            "npm:swagger-ui-express",
+            "npm:tslib"
+          ]
+        },
+        {
+          "file": "apps/api/src/app/app.controller.spec.ts",
+          "hash": "7647647754668916054",
+          "deps": [
+            "npm:@nestjs/testing"
+          ]
+        },
+        {
+          "file": "apps/api/src/app/app.controller.ts",
+          "hash": "15276891910009544695",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/api/src/app/app.module.ts",
+          "hash": "14323568230850888776",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/api/src/app/app.service.spec.ts",
+          "hash": "13111976464657524091",
+          "deps": [
+            "npm:@nestjs/testing"
+          ]
+        },
+        {
+          "file": "apps/api/src/app/app.service.ts",
+          "hash": "9967902337593410053",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/api/src/app/solar/api-key.guard.ts",
+          "hash": "2775432298518522337",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/api/src/app/solar/solar.controller.ts",
+          "hash": "5292674334228829609",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/swagger@7.4.2",
+            "@examen-monorepo/shared"
+          ]
+        },
+        {
+          "file": "apps/api/src/app/solar/solar.dto.ts",
+          "hash": "13927452501635713491",
+          "deps": [
+            "npm:@nestjs/swagger@7.4.2",
+            "npm:class-validator",
+            "@examen-monorepo/shared"
+          ]
+        },
+        {
+          "file": "apps/api/src/app/solar/solar.service.ts",
+          "hash": "12933188445830909490",
+          "deps": [
+            "npm:@nestjs/common",
+            "@examen-monorepo/shared"
+          ]
+        },
+        {
+          "file": "apps/api/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/api/src/main.ts",
+          "hash": "16151318855089477128",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/core",
+            "npm:@nestjs/swagger@7.4.2"
+          ]
+        },
+        {
+          "file": "apps/api/tsconfig.app.json",
+          "hash": "3115669862748210819"
+        },
+        {
+          "file": "apps/api/tsconfig.json",
+          "hash": "9214820933160915425"
+        },
+        {
+          "file": "apps/api/tsconfig.spec.json",
+          "hash": "615003462392562649"
+        },
+        {
+          "file": "apps/api/webpack.config.js",
+          "hash": "1138914127741561495",
+          "deps": [
+            "npm:@nx/webpack"
+          ]
+        }
+      ]
+    }
+  },
+  "externalNodesHash": "6838529166670669689"
+}

@@ -1,0 +1,69 @@
+
+[2m> [22m[2mnx run[22m @org/api:build:development
+
+[2m> [22mwebpack-cli build
+
+webpack compiled [1m[32msuccessfully[39m[22m (cf7b1f0657cc2ea5)
+
+[2m[32m[39m[22m
+
+[7m[1m[32m NX [39m[22m[27m  [32mSuccessfully ran target [1mbuild[22m for project @org/api[39m
+
+
+  Run duration:      4.5s
+  Cache:             0/1 hit (0%)
+  Critical path:     4.4s (1 task)
+  Recoverable time:  <1ms
+
+  Recommendations:
+    - Drastically reduce your run duration by sharing a cache across your team and CI → https://nx.dev/ci/features/remote-cache?utm_source=nx-cli&utm_medium=cli&utm_campaign=performance-report&utm_content=remote-cache.
+    - Speed up or split the longest tasks on the critical path:
+        @org/api:build:development    4.4s
+[1m[31mDebugger listening on ws://localhost:9229/adfdff6d-cc92-404d-91d0-0bc8b268a4a5
+Debugger listening on ws://localhost:9229/adfdff6d-cc92-404d-91d0-0bc8b268a4a5
+For help, see: https://nodejs.org/en/docs/inspector
+[39m[22m
+[32m[Nest] 34460  - [39m18/07/2026, 14:56:16 [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 34460  - [39m18/07/2026, 14:56:16 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +11ms[39m
+[32m[Nest] 34460  - [39m18/07/2026, 14:56:16 [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSolarController {/api}:[39m[38;5;3m +126ms[39m
+[32m[Nest] 34460  - [39m18/07/2026, 14:56:16 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/solar/calculate, POST} route[39m[38;5;3m +4ms[39m
+[32m[Nest] 34460  - [39m18/07/2026, 14:56:16 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v2/solar/calculate, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 34460  - [39m18/07/2026, 14:56:16 [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +4ms[39m
+[32m[Nest] 34460  - [39m18/07/2026, 14:56:16 [32m    LOG[39m [32mAPI disponible en http://localhost:3000/api[39m
+[32m[Nest] 34460  - [39m18/07/2026, 14:56:16 [32m    LOG[39m [32mSwagger disponible en http://localhost:3000/api/docs[39m
+
+[7m[1m[36m NX [39m[22m[27m [1mFile change detected. Restarting...[22m
+
+
+[2m> [22m[2mnx run[22m @org/api:build:development
+
+[2m> [22mwebpack-cli build
+
+webpack compiled [1m[32msuccessfully[39m[22m (af111734a5e35ad0)
+
+[2m[32m[39m[22m
+
+[7m[1m[32m NX [39m[22m[27m  [32mSuccessfully ran target [1mbuild[22m for project @org/api[39m
+
+
+  Run duration:      6.1s
+  Cache:             0/1 hit (0%)
+  Critical path:     6.0s (1 task)
+  Recoverable time:  <1ms
+
+  Recommendations:
+    - Drastically reduce your run duration by sharing a cache across your team and CI → https://nx.dev/ci/features/remote-cache?utm_source=nx-cli&utm_medium=cli&utm_campaign=performance-report&utm_content=remote-cache.
+    - Speed up or split the longest tasks on the critical path:
+        @org/api:build:development    6.0s
+[1m[31mDebugger listening on ws://localhost:9229/4dbdeee1-0770-41a4-8694-b3cc20bb9001
+Debugger listening on ws://localhost:9229/4dbdeee1-0770-41a4-8694-b3cc20bb9001
+For help, see: https://nodejs.org/en/docs/inspector
+[39m[22m
+[32m[Nest] 25900  - [39m18/07/2026, 16:55:55 [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 25900  - [39m18/07/2026, 16:55:55 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +10ms[39m
+[32m[Nest] 25900  - [39m18/07/2026, 16:55:55 [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSolarController {/api}:[39m[38;5;3m +75ms[39m
+[32m[Nest] 25900  - [39m18/07/2026, 16:55:55 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/solar/calculate, POST} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 25900  - [39m18/07/2026, 16:55:55 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v2/solar/calculate, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 25900  - [39m18/07/2026, 16:55:55 [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +1ms[39m
+[32m[Nest] 25900  - [39m18/07/2026, 16:55:55 [32m    LOG[39m [32mAPI disponible en http://localhost:3000/api[39m
+[32m[Nest] 25900  - [39m18/07/2026, 16:55:55 [32m    LOG[39m [32mSwagger disponible en http://localhost:3000/api/docs[39m

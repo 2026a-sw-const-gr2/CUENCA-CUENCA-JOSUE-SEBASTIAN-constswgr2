@@ -1,0 +1,43 @@
+{
+  "run": {
+    "command": "nx run-many -t serve --projects=@org/api,@org/client --parallel=2",
+    "startTime": "2026-07-19T00:21:46.936Z",
+    "endTime": "2026-07-19T01:57:09.092Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "@org/api:build",
+      "target": "build",
+      "projectName": "@org/api",
+      "hash": "13769394996454901767",
+      "startTime": "2026-07-19T00:21:47.033Z",
+      "endTime": "2026-07-19T00:21:47.137Z",
+      "params": "",
+      "cacheStatus": "local-cache-hit",
+      "status": 0
+    },
+    {
+      "taskId": "@org/api:serve:development",
+      "target": "serve",
+      "projectName": "@org/api",
+      "hash": "6829226773550113594",
+      "startTime": "2026-07-19T00:21:47.156Z",
+      "endTime": "2026-07-19T01:57:09.042Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    },
+    {
+      "taskId": "@org/client:serve",
+      "target": "serve",
+      "projectName": "@org/client",
+      "hash": "11312166633586809109",
+      "startTime": "2026-07-19T00:21:47.029Z",
+      "endTime": "2026-07-19T01:57:09.054Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    }
+  ]
+}
